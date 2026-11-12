@@ -101,8 +101,6 @@ lon_deg = lon.degrees
 
 fig = plt.figure()
 ax = fig.add_subplot(111, polar=True)
-# ax = plt.axes(projection=ccrs.NorthPolar())
-
 
 ax.plot(np.radians(lon_deg), 90 - lat_deg, label="Orbit")
 ax.plot(np.radians(GS_LON), 90 - GS_LAT, 'ro', label="Bodenstation")
